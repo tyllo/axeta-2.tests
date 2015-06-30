@@ -1,0 +1,13 @@
+
+// подключим фрейморк http://concisecss.com
+// пути прописаны в gulpfile
+@import 'concise';
+// подключим аддоны concise
+@import 'wells/wells';
+@import 'badges-labels/badges';
+
+@import 'variables';
+@import 'base';
+@import 'products';
+@import 'basket';
+

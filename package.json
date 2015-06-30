@@ -1,0 +1,24 @@
+{
+  "name": "Axeta-test",
+  "version": "0.0.1",
+  "description": "Тестовое задание - 1 задача",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower i && gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tyllo <gmtyllo@gmail.com> (http://xdraw.ru)",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "jade": "^1.10.0"
+  }
+}

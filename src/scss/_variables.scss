@@ -1,0 +1,19 @@
+
+// colors
+$color-primary: black;
+$color-primary-tint-10: lighten($color-primary, 10%);
+$color-primary-tint-25: lighten($color-primary, 25%);
+$color-primary-tint-50: lighten($color-primary, 50%);
+$color-primary-tint-75: lighten($color-primary, 75%);
+$color-primary-tint-90: lighten($color-primary, 90%);
+
+$colomn-border: calculate-rem(1px);
+
+// отступы
+$margin-base: calculate-rem(5px);
+
+// отступы от window
+$margin-content: calculate-rem(10px);
+
+// размер основного шрифта
+$main-text-size: calculate-rem(12px);

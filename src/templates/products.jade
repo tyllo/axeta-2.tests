@@ -1,0 +1,15 @@
+
+- src = 'http://placehold.it/100x80'
+
+section#products.height
+  .row.gutters.height#products-container
+
+  script(type='text/template' id='product-template')
+    .column-4(style='margin: 0.5%')
+      .well.height
+        img(src=src alt='')
+        .desc
+          h3 {{ title }}
+          p.text  {{ text }}
+          p.price {{ price }}
+          button.btn(name='basket') В корзину

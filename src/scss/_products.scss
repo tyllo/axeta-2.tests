@@ -1,0 +1,47 @@
+
+/*************************************************
+      отдельная прокрутка для корзины
+=================================================*/
+
+#products {
+  margin: 4*$margin-base;
+}
+
+/*************************************************
+             карточка продукта
+=================================================*/
+#products .well {
+  margin: $margin-base/2;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+/*************************************************
+               описание продукта
+=================================================*/
+#products .desc{
+  padding: $margin-base;
+}
+
+#products h3 {
+ font-weight: bold;
+ font-size: 1rem;
+ margin: $margin-base 0;
+}
+
+#products .price {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: $color-primary-tint-50;
+  &:after {
+    font-size: 1rem;
+    font-weight: normal;
+    color: black;
+    content: ' руб.'
+  }
+}
+
+#products a {
+  width: 100%;
+}

@@ -1,0 +1,42 @@
+
+/*************************************************
+             основные настройки
+=================================================*/
+html, body, .height { height: 100%; margin: 0; }
+
+html { font-size: 1.5vw; }
+
+p {
+  font-size: calculate-rem(10px);
+}
+
+#content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.over:hover {
+  // @extend .transition;
+  // margin: -$margin-base/8;
+  border: $colomn-border solid $color-primary-tint-90;
+  box-shadow: 0 0 $margin-base/4 rgba(255,255,255,0.2);
+  z-index: 2000;
+}
+
+img {min-width: 100%}
+
+a.btn {
+  &:hover { color: white }
+  &:visited { color: white }
+}
+
+// прячем
+.hide { display: none }
+
+
+.bg-blue {
+  background-color: red;
+  margin-left: calculate-rem(8px);
+}
+

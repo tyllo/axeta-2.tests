@@ -17,6 +17,6 @@ var ModelBasketItem = Backbone.Model.extend({
 
   // изменим количество заказанных товаров
   changeAmount: function (value) {
-    this.set({amount: value});
+    this.set({amount: parseInt(value)});
   }
 });

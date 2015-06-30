@@ -23,7 +23,11 @@ var
   config = {
     dest: dest,
     src: src,
-    js:   {src: src + 'js/*.js', dest: dest + 'js/'},
+    js: {
+      src: src + 'js/*.js',
+      dest: dest + 'js/',
+      watch: src + 'js/**/*.js'
+    },
     jade: {
       src: [src + '*.jade', src + '**/api/**/*.jade'],
       dest: dest,
@@ -143,7 +147,7 @@ gulp.task('build',['copy','js','jade','css'], function () {
   //TODO
 });
 gulp.task('default',['js','jade','css','server'], function () {
-  gulp.watch(config.js.src, ['js']).on('change', reload);
+  gulp.watch(config.js.watch, ['js']).on('change', reload);
   gulp.watch(config.css.watch, ['css']).on('change', reload);
   gulp.watch(config.jade.watch, ['jade']).on('change', reload);
 });

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание #2</title>
+    <meta name="author" content="tyllo, gmtyllo@gmail.com">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="row height">
+      <div class="column-11 height">
+        <section id="content">
+          <section id="products" class="height">
+            <div id="products-container" class="row gutters height"></div>
+            <script type="text/template" id="product-template">
+              <div style="margin: 0.5%" class="column-4">
+                <div class="well height"><img src="http://placehold.it/100x80" alt="">
+                  <div class="desc">
+                    <h3>{{ title }}</h3>
+                    <p class="text"> {{ text }}</p>
+                    <p class="price">{{ price }}</p>
+                    <button name="basket" class="btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </script>
+          </section>
+        </section>
+      </div>
+      <aside id="basket" class="column-5 height bg-light-gray">
+        <div class="row">
+          <div class="column-16 title"><span>Корзина покупателя</span><span id="badge" class="badge bg-blue"></span></div>
+        </div>
+        <div class="row stroka hh">
+          <div class="column-8">Название</div>
+          <div class="column-2"><i class="fa fa-fw fa-cart-arrow-down"></i></div>
+          <div class="column-5">Цена</div>
+          <div class="column-1"><i class="fa fa-fw fa-trash-o"></i></div>
+        </div>
+        <div id="basket-container"></div>
+        <script type="text/template" id="basket-template">
+          <div class="row stroka item">
+            <div class="column-8 text-left">{{ title }}</div>
+            <div class="column-2">
+              <input type="text" name="amount" value="{{ amount }}">
+            </div>
+            <div class="column-5">{{ price*amount }}</div>
+            <div class="column-1">
+              <button name="delete"><i class="fa fa-fw fa-times"></i></button>
+            </div>
+            <div class="column-16">
+              <p>{{ text }}</p>
+            </div>
+          </div>
+        </script>
+        <div class="row stroka full-cost hide">
+          <div class="column-8 text-left">Всего:</div>
+          <div id="basket-cost" class="column-8">0</div>
+        </div>
+      </aside>
+    </div>
+    <script src="js/vendors/jquery.js"></script>
+    <script src="js/vendors/underscore.js"></script>
+    <script src="js/vendors/backbone.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

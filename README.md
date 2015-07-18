@@ -14,16 +14,16 @@
 ```
 $ npm install -g bower gulp
 ```
-- Клонируйте репозиторий или скопируйте на диск и [разархивируйте](https://github.com/tyllo/axeta-test2/archive/master.zip):
+- Клонируйте репозиторий или скопируйте на диск и [разархивируйте](https://github.com/tyllo/axeta-2.tests/archive/master.zip):
 ```
-$ git clone git@github.com:tyllo/axeta-test2.git axeta#2
+$ git clone git@github.com:tyllo/axeta-2.tests.git axeta#2
 ```
 -  Зайдите в папку проекта
 ```
 $ cd axeta#2
 ```
 - Установите все зависимости проекта,
-автоматом создаться папка [build](https://github.com/tyllo/axeta-test2/tree/gh-pages) с собранным проектом
+автоматом создаться папка [build](https://github.com/tyllo/axeta-2.tests/tree/gh-pages) с собранным проектом
 ```
 $ npm install
 ```

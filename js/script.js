@@ -45,7 +45,7 @@ var CollectionProduct = Backbone.Collection.extend({
         console.log('success fetch')
       },
       error: function (collection, response, options) {
-        alert("Ошибка связи с сервером, попробуйте перегрузить страницу");
+        alert("Error server");
       },
     });
   },
@@ -204,8 +204,8 @@ var CollectionBasket = Backbone.Collection.extend({
   // переберем все модели и посчитаем стоимость всей корзины
   getBasketCost: function () {
     return this.reduce(function(price, model){
-      return price + model.get('amount')*model.get('price');
-    }, 0);
+      return (price + model.get('amount')*model.get('price'));
+    }, 0).toFixed(2);
   },
 
   getBasketAmount: function () {
@@ -356,7 +356,7 @@ var ViewCollectionBasket = Backbone.View.extend({
       return this;
     };
     var basketCost = this.collection.getBasketCost();
-    $basketCost.text(basketCost + ' руб.');
+    $basketCost.text('$ ' + basketCost);
     $basketCost.parent().removeClass('hide');
   },
 

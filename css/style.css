@@ -1711,8 +1711,7 @@ a.btn:visited {
   #products .price:after {
     font-size: 1rem;
     font-weight: normal;
-    color: black;
-    content: ' руб.'; }
+    color: black; }
 
 #products a {
   width: 100%; }

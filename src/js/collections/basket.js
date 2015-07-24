@@ -40,8 +40,8 @@ var CollectionBasket = Backbone.Collection.extend({
   // переберем все модели и посчитаем стоимость всей корзины
   getBasketCost: function () {
     return this.reduce(function(price, model){
-      return price + model.get('amount')*model.get('price');
-    }, 0);
+      return (price + model.get('amount')*model.get('price'));
+    }, 0).toFixed(2);
   },
 
   getBasketAmount: function () {

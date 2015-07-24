@@ -16,7 +16,7 @@ var CollectionProduct = Backbone.Collection.extend({
         console.log('success fetch')
       },
       error: function (collection, response, options) {
-        alert("Ошибка связи с сервером, попробуйте перегрузить страницу");
+        alert("Error server");
       },
     });
   },

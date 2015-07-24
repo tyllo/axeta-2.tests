@@ -53,7 +53,7 @@ var ViewCollectionBasket = Backbone.View.extend({
       return this;
     };
     var basketCost = this.collection.getBasketCost();
-    $basketCost.text(basketCost + ' руб.');
+    $basketCost.text('$ ' + basketCost);
     $basketCost.parent().removeClass('hide');
   },
 

@@ -1,13 +1,13 @@
 
 .row
   .column-16.title
-    span Корзина покупателя
+    span Shopping cart
     span#badge.badge.bg-blue
 
 .row.stroka.hh
-  .column-8 Название
+  .column-8 Name
   .column-2: i.fa.fa-fw.fa-cart-arrow-down
-  .column-5 Цена
+  .column-5 Price
   .column-1: i.fa.fa-fw.fa-trash-o
 
 #basket-container
@@ -15,12 +15,12 @@ script(type='text/template' id='basket-template')
   .row.stroka.item
     .column-8.text-left {{ title }}
     .column-2: input(type='text' name='amount' value='{{ amount }}')
-    .column-5 {{ price*amount }}
+    .column-5 {{ (price*amount).toFixed(2) }}
     .column-1: button(name='delete'): i.fa.fa-fw.fa-times
     .column-16: p {{ text }}
 
 .row.stroka.full-cost.hide
-  .column-8.text-left Всего:
+  .column-8.text-left Total:
   .column-8#basket-cost 0
 
 
